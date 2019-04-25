@@ -9,7 +9,7 @@
     myFile = $('#fileinput'.prop('files'));
   });
 
-  var Minio = require('minio');
+  var Minio = window.Minio;
 
   var minioClient = new Minio.Client({
     endPoint: 'localhost/minio/images',
