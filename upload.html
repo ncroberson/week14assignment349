@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Image Uploader</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.css">
+</head>
+<body>
+    <header>
+        <h1>Image Upload</h1>
+	</header>
+	<form id="fileupload">
+		<input type="text" value="Write image caption here." id="caption" />
+		<input type="file" id="file" />
+		<input type="submit" id="submitbutton">
+	</form>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="minio-browser.js"></script>
+    <script src="upload.js"></script>
+</body>
+</html>
