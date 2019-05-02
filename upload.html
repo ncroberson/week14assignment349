@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.447.0.min.js"></script>
     <meta charset="utf-8">
-    <title>Image Uploader</title>
+    <title>Upload</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.css">
-</head>
+    </head>
+
 <body>
+  <upload-form></upload-form>
     <header>
-        <h1>Image Upload</h1>
-	</header>
-	<form id="fileupload">
-		<input type="text" value="Write image caption here." id="caption" />
-		<input type="file" id="file" />
-		<input type="submit" id="submitbutton">
-	</form>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://docs.aws.amazon.com"></script>
+        <h1>Upload Your Photos</h1>
+    </header>
+    <div id="template">
+      <form>
+        <h2>Name:</h2><br>
+        <input type="text" id="text"><br>
+        <h2>File to Upload:</h2><br>
+          <input type="file" id="file">
+          <button type="button">Click Here to Upload</button>
+        </form>
     <script src="upload.js"></script>
+
 </body>
 </html>
